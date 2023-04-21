@@ -1,9 +1,10 @@
-package main
+package tests
 
 import (
+	"cacher/client"
+	"context"
 	"fmt"
 	"log"
-	"net"
 	"sync"
 	"testing"
 	"time"
@@ -16,13 +17,17 @@ func benchRedisClient() {
 	for i := 0; i < 10; i++ {
 		go func(i int) {
 
-			conn, err := net.Dial("tcp", ":5000")
+			client, err := client.New(":5000", client.Options{})
 			if err != nil {
 				log.Fatal(err)
 			}
 
-			for j := 0; j < 10; j++ {
-				conn.Write([]byte("SET Foo Bar 2500"))
+			for j := 0; j < 1000; j++ {
+
+				err = client.Set(context.Background(), []byte(fmt.Sprintf("%d", time.Now().Nanosecond())), []byte(fmt.Sprintf("%d", time.Now().Nanosecond())), 2_500_000_000)
+				if err != nil {
+					log.Println(err)
+				}
 			}
 			wg.Done()
 		}(i)
