@@ -134,8 +134,11 @@ func (s *Server) handleGetCommand(conn net.Conn, cmd *proto.CommandGet) error {
 	return err
 }
 
+var i = 0
+
 func (s *Server) handleSetCommand(conn net.Conn, cmd *proto.CommandSet) error {
-	log.Printf("SET %s to %s", cmd.Key, cmd.Value)
+	i++
+	log.Printf("SET %s to %s i = %d", cmd.Key, cmd.Value, i)
 
 	go func() {
 		for member := range s.members {
