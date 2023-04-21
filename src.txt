@@ -1,3 +1,61 @@
 https://github.com/anthdm/ggcache
 https://www.youtube.com/watch?v=sRXIRikME14
-stop on 40 minutes
+stop on 1:26 minutes
+
+
+
+after
+
+https://www.youtube.com/watch?v=mvUiw9ilqn8
+//server driven UI
+https://apptractor.ru/develop/server-driven-ui.html
+https://www.judo.app/blog/server-driven-ui/
+
+//test environment
+https://launchdarkly.com/blog/test-environment-best-practices-8-you-need-to-know/
+https://www.apwide.com/6-test-environment-management-best-practices/
+https://blog.scottlogic.com/2020/02/10/continuous-testing.html
+https://www.uffizzi.com/blog/test-environments
+//and tests
+https://legacy-documentation-sdks.temporal.io/go/how-to-test-workflow-definitions-in-go
+https://stackoverflow.com/questions/70254196/is-there-a-best-practice-to-setup-golang-unit-test-parameters
+https://fossa.com/blog/golang-best-practices-testing-go/
+https://blog.jetbrains.com/go/2022/11/22/comprehensive-guide-to-testing-in-go/
+https://developer.epages.com/blog/tech-stories/how-to-prepare-a-simple-go-app-for-a-ci-environment/
+https://habr.com/ru/articles/145708/
+
+//role based auth
+https://www.zupzup.org/casbin-http-role-auth/
+https://www.aserto.com/blog/building-rbac-in-go
+http://www.inanzzz.com/index.php/post/42la/role-based-access-control-http-middleware-in-golang
+https://stackoverflow.com/questions/40679073/elegant-role-based-jwt-security-in-go-server
+
+
+
+//siem
+https://www.youtube.com/watch?v=V5XN2hd3BHM
+
+//tcp web server
+https://codeby.net/threads/realizacija-metoda-http-zaprosa-get-s-pomoschju-socket-v-python.81337/
+https://www.youtube.com/watch?v=5eQJ-0y8TzE
+https://hackthedeveloper.com/golang-tcp-build-http-server-go-net-package/
+https://gist.github.com/Mardiniii/b9047b27871055612bd72dfb40c2a5b8
+https://stackoverflow.com/questions/60339039/http-server-from-tcp-socket-in-go
+
+
+//antonyGG
+https://www.youtube.com/watch?v=LKBl6lN6ENk
+https://www.youtube.com/watch?v=rSrv-TWyO6A
+https://www.youtube.com/watch?v=Zjyg1TCZzSk
+https://www.youtube.com/watch?v=ezaCIoOTTrY
+https://www.youtube.com/watch?v=uOBle10Z-VQ
+https://www.youtube.com/watch?v=367qYRy39zw
+https://www.youtube.com/watch?v=StN_twOfizQ&list=PL0xRBLFXXsP7-0IVCmoo2FEWBrQzfH2l8&index=20
+
+//read code
+https://github.com/gofiber/csrf/blob/master/main.go
+
+
+https://www.youtube.com/watch?v=UNGi144eVbI
+https://www.youtube.com/watch?v=bSMZgXzC9AA
+

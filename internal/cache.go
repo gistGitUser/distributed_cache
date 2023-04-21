@@ -20,6 +20,10 @@ func NewCache() *Cache {
 func (c *Cache) Set(key, value []byte, ttl time.Duration) error {
 	c.lock.Lock()
 	defer c.lock.Unlock()
+	go func() {
+		<-time.After(ttl)
+		delete(c.data, string(key))
+	}()
 
 	c.data[string(key)] = value
 
@@ -37,7 +41,7 @@ func (c *Cache) Get(key []byte) ([]byte, error) {
 	return val, nil
 }
 
-func (c *Cache) Has(key []byte) (bool) {
+func (c *Cache) Has(key []byte) bool {
 	c.lock.RLock()
 	defer c.lock.RUnlock()
 
